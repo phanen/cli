@@ -638,7 +638,7 @@ func NewCreateContext(opts *CreateOptions) (*CreateContext, error) {
 
 	var headRemote *ghContext.Remote
 
-	// We received the head repository and branch from ParsePRRefs, or inferred
+	// We received the head repository and branch from ResolvePRRefs, or inferred
 	// it from --head input, but we need to check if it's up-to-date with
 	// our local branch state.
 	// If it is, we can use it as the head repo for the PR
